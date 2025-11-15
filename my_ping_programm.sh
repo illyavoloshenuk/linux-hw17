@@ -34,13 +34,13 @@ while true; do
 
         TIME_INT=${TIME_MS%.*}
         if [ "$TIME_INT" -gt 100 ]; then
-            echo "⚠️  ВНИМАНИЕ: время отклика выше 100 ms!"
+            echo "ВНИМАНИЕ: время отклика выше 100 ms!"
         fi
     fi
 
 
     if [ $FAIL_COUNT -ge 3 ]; then
-        echo "❌  Ошибка: 3 неудачных пинга подряд!"
+        echo "Ошибка: 3 неудачных пинга подряд!"
         FAIL_COUNT=0
     fi
 
